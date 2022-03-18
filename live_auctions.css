@@ -68,6 +68,7 @@
 .bid:hover {
     box-shadow: 0.1rem 0.1rem 0.1rem #000;
     transform: rotate(360deg);
+    transform-origin: center;
 }
 .card .bid i {
    margin: 0 0.5rem;
