@@ -3,13 +3,27 @@
     
 }
 .live_auctions_total {
-    background-color: #fff;
+    background-color: #000;
     padding: 2.5rem 1.5rem;
 }
 .live_auctions_total .live_auctions--title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
+    color: snow;
+    padding: 0 2rem;
+}
+.live_auctions--title h3 {
+    font-size: 2rem;
+}
+.live_auctions--title span {
+    border-bottom: 0.1rem solid blueviolet;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.live_auctions--title span:hover {
+    transform: scaleY(1.2);
+    
 }
 .live_auctions--cards {
     display: flex;

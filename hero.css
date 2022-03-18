@@ -19,6 +19,11 @@ main {
     color: snow;
     font-size: 6rem;
 }
+/* .hero_total h1 span {
+    background-image: linear-gradient(to right,#ccc,#fff);
+    background-clip: text;
+    background-color: transparent;
+} */
 .hero_total h3 {
     color: #adadb0;
     margin-top: 2rem;

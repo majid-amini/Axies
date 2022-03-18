@@ -22,6 +22,12 @@
 .popular_collection--title span {
     border-bottom: 0.1rem solid #fff;
     cursor: pointer;
+    border-bottom: 0.1rem solid blueviolet;
+    transition: all 0.3s ease-in-out;
+}
+.popular_collection--title span:hover {
+    transform: scaleY(1.2);
+    position: relative;
 }
 
 .popular_collection_total .popular_collection_cards_total {
