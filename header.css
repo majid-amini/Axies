@@ -43,6 +43,7 @@ header {
     border-bottom-right-radius: 0.8rem;
     z-index: 1;
     transform: scaleY(0);
+    transform-origin: top;
 
 }
 .first-mega li {
