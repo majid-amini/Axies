@@ -1,0 +1,56 @@
+#top_seller {
+    margin-top: 2rem;
+    width: 100%;
+}
+.top_seller_total {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+.top_seller_total h3 {
+    color: snow;
+}
+.top_seller_total .top_seller--top {
+    margin-top: 2rem;
+    color: snow;
+    display: flex;
+    justify-content: space-between;
+}
+.top_seller--down {
+    color: snow;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+
+
+.top_seller--top .top_seller--container,.top_seller--down .top_seller--container {
+    display: flex;
+    width: 20%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.top_seller--container:hover {
+    
+  transform: translateX(1rem);   
+ 
+}
+.top_seller--container .top_seller_container--left img {
+    width: 7rem;
+    border-radius: 1rem;
+}
+
+.top_seller--container .top_seller_container--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5rem;
+    
+}
+.top_seller_container--right .top_seller--name {
+    padding: 0.5rem 0;
+}
+.top_seller_container--right .top_seller--crypto {
+    padding: 0.5rem 0;
+}

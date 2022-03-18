@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+:root {
+  --primary-color: #7854f7;
+  --dark-color: #181131;
+  --accent-color: #d57d00;
+  --light-color: #f7f7f7;
+  --secondary-color: #515151;
+  --border-raduis-tiny: 0.12rem;
+  --border-raduis-xs: 0.25rem;
+  --border-raduis-sm: 0.5rem;
+  --border-raduis-md: 1rem;
+  --border-raduis-lg: 1.5rem;
+  --border-raduis-xl: 2rem;
+  --border-raduis-2xl: 2.5rem;
+  --border-raduis-3xl: 3rem;
+
+  --font-size-sm: 0.75rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+}
+
+/* px , rem , em, pt, percent */
+html {
+  font-size: 62.5%;
+  font-family : 'Urbanist', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.5rem;
+  background-image:linear-gradient(to right,#14141F,#250731);
+  
+}
+/* @font-face {
+  font-family: 'fa-brands';
+  src: url(./assets/font/nfts.woff) format('woff');
+}
+
+p{
+  font-family: fa-brands;
+} */
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
