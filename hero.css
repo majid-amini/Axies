@@ -9,7 +9,7 @@ main {
     align-items: flex-start;
 }
 .hero_total--left {
-    
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,11 +19,28 @@ main {
     color: snow;
     font-size: 6rem;
 }
-/* .hero_total h1 span {
-    background-image: linear-gradient(to right,#ccc,#fff);
-    background-clip: text;
-    background-color: transparent;
-} */
+.hero_total--left h1:nth-child(2), .hero_total--left h1:nth-child(3)  {
+    position: absolute;
+    transform: translate(0% 0%);
+    top: 8rem;
+}
+.hero_total--left h1:nth-child(2) {
+    background: linear-gradient(-45deg,#e250e5, #4b50e6, #e250e5, #4b50e6);
+    -webkit-background-clip: text;
+    color: black;
+    -webkit-text-stroke: 0.3rem transparent;
+    background-size: 100% 100%;
+}
+.hero_total--left h1:nth-child(3) {
+    animation: animate 4s ease-in-out infinite;
+    background: linear-gradient( -45deg, #e250e5, #4b50e6, #e250e5, #4b50e6 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero_total--left h1:nth-child(4) {
+    margin-top: 9rem;
+}
+
 .hero_total h3 {
     color: #adadb0;
     margin-top: 2rem;
@@ -34,6 +51,7 @@ main {
     align-items: center;
     cursor: pointer;
     margin-top: 2rem;
+    gap: 2rem;
 }
 .hero_total .hero_buttons div {
     display: flex;
@@ -41,7 +59,6 @@ main {
     align-items: center;
     padding: 1rem 1.5rem;
     border: 0.1rem solid #4e3fee;
-    margin: 0 1.5rem;
     border-radius: 2.2rem;
     color: snow;
     transition: all 0.3s ease-in-out;
@@ -78,6 +95,27 @@ main {
     top: 3rem;
     right: 6rem;
 }
+
+.circle-e1 {
+    position: relative;
+    background-color: transparent blueviolet;
+    border: 0.3rem solid blueviolet;
+    top: 25rem;
+    left: 3rem;
+    width: 5rem;
+    height: 5rem;
+    animation: circle 8s alternate infinite;
+}
+.circle-e2 {
+    position: relative;
+    background-color: transparent blueviolet;
+    border: 0.3rem solid blueviolet;
+    top: 12rem;
+    right: 6rem;
+    width: 2rem;
+    height: 2rem;
+    animation: circle 12s alternate infinite;
+}
 .circle-f1{
     top: 10rem;
     left: 2rem;
@@ -86,25 +124,21 @@ main {
     background-image: linear-gradient(to right,blueviolet,rgb(128, 4, 243));
     animation: circle 10s alternate infinite;
 }
-.circle-e1 {
-    position: relative;
-    background-image: linear-gradient(to right,blueviolet,rgb(128, 4, 243));
-    top: 25rem;
-    left: 3rem;
-    width: 5rem;
-    height: 5rem;
-    animation: circle 8s alternate infinite;
-}
-
 .circle-f2 {
-    
     top: 20rem;
     right: 3rem;
     width: 5rem;
     height: 5rem;
     background-image: linear-gradient(to right,blueviolet,rgb(128, 4, 243));
     animation: circle 5s alternate infinite;
-    
+}
+.circle-f3 {
+    top: 16rem;
+    right: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: linear-gradient(to right,blueviolet,rgb(128, 4, 243));
+    animation: circle 5s alternate infinite;
 }
 .first--star {
     color: blueviolet;
@@ -122,7 +156,7 @@ main {
     top: 10rem;
     right: 15rem;
 }
-.multiple1 {
+/* .multiple1 {
     color: blueviolet;
     position: absolute;
     font-size: 4rem;
@@ -131,7 +165,7 @@ main {
     right: 5rem;
     font-weight: bold;
     animation: multiply 10s alternate infinite;
-}
+} */
 /* .multiple2 {
 
 } */
@@ -140,6 +174,36 @@ main {
     left: 0;
     bottom: 5rem;
     z-index: 5;
+}
+@keyframes animate {
+    0%,
+    100% {
+        clip-path: polygon(
+            0% 45%,
+            16% 44%,
+            33% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
 }
 @keyframes circle {
     from {
@@ -179,7 +243,7 @@ main {
         transform: translateY(-2rem);
     }
 }
-@keyframes multiply {
+/* @keyframes multiply {
     from {
         transform: translate(8rem);
         transform: rotate(160deg);
@@ -188,4 +252,4 @@ main {
         transform: translate(-8rem);
         transform: (35deg);
     }
-}
+} */
