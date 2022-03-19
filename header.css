@@ -69,11 +69,9 @@ header {
 }
 .first_ul  li:hover > .first-mega {
    color: #000;
-   /* opacity: 1; */
    display: flex;
    visibility: 1;
    transform: scaleY(1);
-   
 }
 .header_ul .first_ul {
     display: flex;
@@ -86,6 +84,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.header_ul .first_ul li a {
+    transition: all 0.3s ease-in-out;
+}
+.header_ul .first_ul li a:hover {
+    transform: scale(1.1);
+    transform-origin: right;
+    color: blueviolet;
 }
 .header_ul .first_ul > li > a {
     color: snow;
