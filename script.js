@@ -32,10 +32,6 @@ deleteBtn.addEventListener('click',function(){
 
 
 
-let heartsIcons = document.querySelectorAll('.fa-heart');
-console.log(heartsIcons);
-// heartsIcons.forEach(item => event) {
-//     item.addEventListener('click',function(){
-        
-//     })
-// }
+
+
+
