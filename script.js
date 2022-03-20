@@ -31,7 +31,16 @@ deleteBtn.addEventListener('click',function(){
 // })
 
 
+let header = document.getElementById('header');
+let topOff = header.offsetTop;
+window.onscroll = function () {
+    scrollfunc();
+};
 
-
-
-
+function scrollfunc() {
+    if (window.pageYOffset > topOff) {
+        header.classList.add('test');
+    } else {
+        header.classList.remove('test')
+    }
+}
