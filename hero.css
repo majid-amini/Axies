@@ -1,160 +1,161 @@
 main {
-    margin-top: 2rem;
-    width: 100%;
-    padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
 }
 .hero_total {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .hero_total--left {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .hero_total h1 {
-    color: snow;
-    font-size: 6rem;
+  color: snow;
+  font-size: 6rem;
 }
-.hero_total--left h1:nth-child(2), .hero_total--left h1:nth-child(3)  {
-    position: absolute;
-    transform: translate(0% 0%);
-    top: 8rem;
+.hero_total--left h1:nth-child(2),
+.hero_total--left h1:nth-child(3) {
+  position: absolute;
+  transform: translate(0% 0%);
+  top: 8rem;
 }
 .hero_total--left h1:nth-child(2) {
-    background: linear-gradient(-45deg,#e250e5, #4b50e6, #e250e5, #4b50e6);
-    -webkit-background-clip: text;
-    color: black;
-    -webkit-text-stroke: 0.3rem transparent;
-    background-size: 100% 100%;
+  background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
+  -webkit-background-clip: text;
+  color: black;
+  -webkit-text-stroke: 0.3rem transparent;
+  background-size: 100% 100%;
 }
 .hero_total--left h1:nth-child(3) {
-    animation: animate 4s ease-in-out infinite;
-    background: linear-gradient( -45deg, #e250e5, #4b50e6, #e250e5, #4b50e6 );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  animation: animate 4s ease-in-out infinite;
+  background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero_total--left h1:nth-child(4) {
-    margin-top: 9rem;
+  margin-top: 9rem;
 }
 
 .hero_total h3 {
-    color: #adadb0;
-    margin-top: 2rem;
+  color: #adadb0;
+  margin-top: 2rem;
 }
 .hero_total .hero_buttons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 2rem;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 2rem;
+  gap: 2rem;
 }
 .hero_total .hero_buttons div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    border: 0.1rem solid #4e3fee;
-    border-radius: 2.2rem;
-    color: snow;
-    transition: all 0.3s ease-in-out;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid #4e3fee;
+  border-radius: 2.2rem;
+  color: snow;
+  transition: all 0.3s ease-in-out;
 }
 .hero_total .hero_buttons div:hover {
-    box-shadow: 0.1rem 0.1rem 0.5rem #fff;
-    color: #4e3fee;
+  box-shadow: 0.1rem 0.1rem 0.5rem #fff;
+  color: #4e3fee;
 }
 .hero_total .hero_buttons button {
-    padding: 0.5rem 1.5rem;
-    background: none;
-    border: none;
-    color: snow;
+  padding: 0.5rem 1.5rem;
+  background: none;
+  border: none;
+  color: snow;
 }
 .hero_total--right {
-    width: 50%;
-    text-align: center;
-    position: relative;
+  width: 50%;
+  text-align: center;
+  position: relative;
 }
 .hero_total--right img {
-    width: 40%;
+  width: 40%;
 }
-.hero_total--right img,.hero_total--right .line {
-    animation: hero 15s alternate infinite;
+.hero_total--right img,
+.hero_total--right .line {
+  animation: hero 15s alternate infinite;
 }
 .hero_total--right .circle {
-    border-radius: 50%;
-    position: absolute;
+  border-radius: 50%;
+  position: absolute;
 }
 .hero_total--right .line {
-    position: absolute;
-    width: 50rem;
-    top: 3rem;
-    right: 6rem;
+  position: absolute;
+  width: 50rem;
+  top: 3rem;
+  right: 6rem;
 }
 
 .circle-e1 {
-    position: relative;
-    background-color: transparent blueviolet;
-    border: 0.3rem solid blueviolet;
-    top: 25rem;
-    left: 3rem;
-    width: 5rem;
-    height: 5rem;
-    animation: circle 8s alternate infinite;
+  position: relative;
+  background-color: transparent blueviolet;
+  border: 0.3rem solid blueviolet;
+  top: 25rem;
+  left: 3rem;
+  width: 5rem;
+  height: 5rem;
+  animation: circle 8s alternate infinite;
 }
 .circle-e2 {
-    position: relative;
-    background-color: transparent blueviolet;
-    border: 0.3rem solid blueviolet;
-    top: 12rem;
-    right: 6rem;
-    width: 2rem;
-    height: 2rem;
-    animation: circle 12s alternate infinite;
+  position: relative;
+  background-color: transparent blueviolet;
+  border: 0.3rem solid blueviolet;
+  top: 12rem;
+  right: 6rem;
+  width: 2rem;
+  height: 2rem;
+  animation: circle 12s alternate infinite;
 }
-.circle-f1{
-    top: 10rem;
-    left: 2rem;
-    width: 8rem;
-    height: 8rem;
-    background-image: linear-gradient(to right,blueviolet,rgb(128, 4, 243));
-    animation: circle 10s alternate infinite;
+.circle-f1 {
+  top: 10rem;
+  left: 2rem;
+  width: 8rem;
+  height: 8rem;
+  background-image: linear-gradient(to right, blueviolet, rgb(128, 4, 243));
+  animation: circle 10s alternate infinite;
 }
 .circle-f2 {
-    top: 20rem;
-    right: 3rem;
-    width: 5rem;
-    height: 5rem;
-    background-image: linear-gradient(to right,blueviolet,rgb(128, 4, 243));
-    animation: circle 5s alternate infinite;
+  top: 20rem;
+  right: 3rem;
+  width: 5rem;
+  height: 5rem;
+  background-image: linear-gradient(to right, blueviolet, rgb(128, 4, 243));
+  animation: circle 5s alternate infinite;
 }
 .circle-f3 {
-    top: 16rem;
-    right: 3rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-image: linear-gradient(to right,blueviolet,rgb(128, 4, 243));
-    animation: circle 5s alternate infinite;
+  top: 16rem;
+  right: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: linear-gradient(to right, blueviolet, rgb(128, 4, 243));
+  animation: circle 5s alternate infinite;
 }
 .first--star {
-    color: blueviolet;
-    position: absolute;
-    font-size: 3rem;
-    animation: star1 10s alternate infinite ;
-    top: 5rem;
-    right: 10rem;
+  color: blueviolet;
+  position: absolute;
+  font-size: 3rem;
+  animation: star1 10s alternate infinite;
+  top: 5rem;
+  right: 10rem;
 }
 .second--star {
-    color: rgba(84, 84, 219, 0.938);
-    position: absolute;
-    font-size: 1.5rem;
-    animation: star2 8s alternate infinite ;
-    top: 10rem;
-    right: 15rem;
+  color: rgba(84, 84, 219, 0.938);
+  position: absolute;
+  font-size: 1.5rem;
+  animation: star2 8s alternate infinite;
+  top: 10rem;
+  right: 15rem;
 }
 /* .multiple1 {
     color: blueviolet;
@@ -170,78 +171,76 @@ main {
 
 } */
 .earth {
-    position: absolute;
-    left: 0;
-    bottom: 5rem;
-    z-index: 5;
+  position: absolute;
+  left: 0;
+  bottom: 5rem;
+  z-index: 5;
 }
 @keyframes animate {
-    0%,
-    100% {
-        clip-path: polygon(
-            0% 45%,
-            16% 44%,
-            33% 50%,
-            54% 60%,
-            70% 61%,
-            84% 59%,
-            100% 52%,
-            100% 100%,
-            0% 100%
-        );
-    }
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
 
-    50% {
-        clip-path: polygon(
-            0% 60%,
-            15% 65%,
-            34% 66%,
-            51% 62%,
-            67% 50%,
-            84% 45%,
-            100% 46%,
-            100% 100%,
-            0% 100%
-        );
-    }
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
 }
 @keyframes circle {
-    from {
-        transform: translateX(5rem);
-    }
-    to {
-        transform: translateX(-5rem);
-    }
+  from {
+    transform: translateX(5rem);
+  }
+  to {
+    transform: translateX(-5rem);
+  }
 }
 @keyframes star1 {
-    from {
-        transform: rotate(180deg);
-        right: 20rem;
-        
-    }
-    to {
-        transform: rotate(-180deg);
-        bottom: 20rem;
-    }
+  from {
+    transform: rotate(180deg);
+    right: 20rem;
+  }
+  to {
+    transform: rotate(-180deg);
+    bottom: 20rem;
+  }
 }
 @keyframes star2 {
-    from {
-        transform: rotate(180deg);
-        left: 10rem;
-        
-    }
-    to {
-        transform: rotate(-180deg);
-        left: 5rem;
-    }
+  from {
+    transform: rotate(180deg);
+    left: 10rem;
+  }
+  to {
+    transform: rotate(-180deg);
+    left: 5rem;
+  }
 }
 @keyframes hero {
-    from {
-        transform: translateY(2rem);
-    }
-    to {
-        transform: translateY(-2rem);
-    }
+  from {
+    transform: translateY(2rem);
+  }
+  to {
+    transform: translateY(-2rem);
+  }
 }
 /* @keyframes multiply {
     from {
