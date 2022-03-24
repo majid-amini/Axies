@@ -1,14 +1,9 @@
 main {
-<<<<<<< HEAD
     margin-top: 2rem;
     width: 100%;
     padding: 0.5rem 2rem;
     padding-left: 10rem;
-=======
-  margin-top: 2rem;
-  width: 100%;
-  padding: 0.5rem 2rem;
->>>>>>> 3fd6a54c54441ec983b63ca1ee4ddf88b715e499
+
 }
 .hero_total {
   display: flex;
