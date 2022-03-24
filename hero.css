@@ -2,6 +2,7 @@ main {
     margin-top: 2rem;
     width: 100%;
     padding: 0.5rem 2rem;
+    padding-left: 10rem;
 }
 .hero_total {
     display: flex;
@@ -156,24 +157,65 @@ main {
     top: 10rem;
     right: 15rem;
 }
-/* .multiple1 {
-    color: blueviolet;
-    position: absolute;
-    font-size: 4rem;
-    transform: rotate(45deg);
-    top: 3rem;
-    right: 5rem;
-    font-weight: bold;
-    animation: multiply 10s alternate infinite;
-} */
-/* .multiple2 {
 
-} */
 .earth {
     position: absolute;
     left: 0;
     bottom: 5rem;
     z-index: 5;
+}
+.social_sticky--total {
+    position: fixed;
+    background-color: #343444;
+    padding: 3rem 2rem;
+    left: 2.3rem;
+    top: 20rem;
+    border-radius: 1rem;
+    z-index: 10;
+    box-shadow: 0.2rem 0.2rem 0.2rem blueviolet;
+    transform-origin: left;
+    transition: all 0.2s ease-in-out;
+}
+.social_sticky--total .social--total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.social_sticky--total .social--total i {
+    font-size: 2rem;
+    color: snow;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    
+}
+.social_sticky--total .social--total i:hover {
+    color: rgba(255, 250, 250, 0.589);
+    transform: scale(1.2);
+    transform-origin: top;
+    
+}
+.right-arrow {
+    background-color: #4e3fee;
+    position: fixed;
+    left: -1rem;
+    top: 33rem;
+    padding: 2rem 0.5rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+    transform-origin: left;
+}
+.right-arrow:hover {
+    left: 0;
+    transform: scale(1.1);
+}
+.right-arrow:hover .social_sticky--total {
+    transform: scale(1);
 }
 @keyframes animate {
     0%,
@@ -243,13 +285,4 @@ main {
         transform: translateY(-2rem);
     }
 }
-/* @keyframes multiply {
-    from {
-        transform: translate(8rem);
-        transform: rotate(160deg);
-    }
-    to {
-        transform: translate(-8rem);
-        transform: (35deg);
-    }
-} */
+

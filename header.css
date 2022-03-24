@@ -1,6 +1,4 @@
 header {
-   
-    /* position: sticky; */
     top: 0;
     z-index: 10;
     background-color: #14141f;
@@ -89,7 +87,7 @@ header {
     justify-content: space-around;
     color: snow;
 }
-.header_ul li {
+.header_ul li:not(.register--li) {
     padding: 0 1rem;
     margin: 0 1rem;
     display: flex;
@@ -112,6 +110,11 @@ header {
 .header_ul ul li i {
     font-size: 1rem;
     
+}
+.register--li {
+    border: 0.1rem solid #4E3FEE;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 .header_search_button {
     display: flex;
