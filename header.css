@@ -13,8 +13,9 @@ header {
     left: 2rem;
     box-shadow: 0.1rem 0.1rem 0.5rem snow;
     transform: rotateX(360deg);
+    border-radius: 1rem;
 }
-#total_header {
+.nav {
     height: 15vh;
     display: flex;
     justify-content: space-around;
