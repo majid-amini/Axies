@@ -17,7 +17,7 @@ main {
   align-items: flex-start;
 }
 .hero_total h1 {
-  color: snow;
+  color: var(--light-color);
   font-size: 6rem;
 }
 .hero_total--left h1:nth-child(2),
@@ -29,7 +29,7 @@ main {
 .hero_total--left h1:nth-child(2) {
   background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
   -webkit-background-clip: text;
-  color: black;
+  color: var(--black-color);
   -webkit-text-stroke: 0.3rem transparent;
   background-size: 100% 100%;
 }
@@ -60,20 +60,20 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1rem 1.5rem;
-  border: 0.1rem solid #4e3fee;
+  border: 0.1rem solid var(--primary-color);
   border-radius: 2.2rem;
-  color: snow;
+  color: var(--light-color);
   transition: all 0.3s ease-in-out;
 }
 .hero_total .hero_buttons div:hover {
   box-shadow: 0.1rem 0.1rem 0.5rem #fff;
-  color: #4e3fee;
+  color: var(--primary-color);
 }
 .hero_total .hero_buttons button {
   padding: 0.5rem 1.5rem;
   background: none;
   border: none;
-  color: snow;
+  color: var(--light-color);
 }
 .hero_total--right {
   width: 50%;
@@ -100,8 +100,8 @@ main {
 
 .circle-e1 {
   position: relative;
-  background-color: transparent blueviolet;
-  border: 0.3rem solid blueviolet;
+  background-color: transparent var(--blueViolet-color);
+  border: 0.3rem solid var(--blueViolet-color);
   top: 25rem;
   left: 3rem;
   width: 5rem;
@@ -110,8 +110,8 @@ main {
 }
 .circle-e2 {
   position: relative;
-  background-color: transparent blueviolet;
-  border: 0.3rem solid blueviolet;
+  background-color: transparent var(--blueViolet-color);
+  border: 0.3rem solid var(--blueViolet-color);
   top: 12rem;
   right: 6rem;
   width: 2rem;
@@ -123,7 +123,7 @@ main {
   left: 2rem;
   width: 8rem;
   height: 8rem;
-  background-image: linear-gradient(to right, blueviolet, rgb(128, 4, 243));
+  background-image: linear-gradient(to right, var(--blueViolet-color), rgb(128, 4, 243));
   animation: circle 10s alternate infinite;
 }
 .circle-f2 {
@@ -131,7 +131,7 @@ main {
   right: 3rem;
   width: 5rem;
   height: 5rem;
-  background-image: linear-gradient(to right, blueviolet, rgb(128, 4, 243));
+  background-image: linear-gradient(to right, var(--blueViolet-color), rgb(128, 4, 243));
   animation: circle 5s alternate infinite;
 }
 .circle-f3 {
@@ -139,11 +139,11 @@ main {
   right: 3rem;
   width: 2.5rem;
   height: 2.5rem;
-  background-image: linear-gradient(to right, blueviolet, rgb(128, 4, 243));
+  background-image: linear-gradient(to right, var(--blueViolet-color), rgb(128, 4, 243));
   animation: circle 5s alternate infinite;
 }
 .first--star {
-  color: blueviolet;
+  color: var(--blueViolet-color);
   position: absolute;
   font-size: 3rem;
   animation: star1 10s alternate infinite;
@@ -172,7 +172,7 @@ main {
   top: 20rem;
   border-radius: 1rem;
   z-index: 10;
-  box-shadow: 0.2rem 0.2rem 0.2rem blueviolet;
+  box-shadow: 0.2rem 0.2rem 0.2rem var(--blueViolet-color);
   transform-origin: left;
   transition: all 0.2s ease-in-out;
 }
@@ -185,7 +185,7 @@ main {
 }
 .social_sticky--total .social--total i {
   font-size: 2rem;
-  color: snow;
+  color: var(--light-color);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -195,7 +195,7 @@ main {
   transform-origin: top;
 }
 .right-arrow {
-  background-color: #4e3fee;
+  background-color: var(--primary-color);
   position: fixed;
   left: -1rem;
   top: 33rem;

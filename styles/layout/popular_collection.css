@@ -1,6 +1,6 @@
 #popular_collection {
     margin-top: 7rem;
-    background-color: #14141F;
+    background-color: var(--dark-color);
 }
 .popular_collection_total {
     width: 100%;
@@ -17,12 +17,12 @@
     justify-content: space-between;
     margin: 1.5rem;
     padding: 0 3rem;
-    color: snow;
+    color: var(--light-color);
 }
 .popular_collection--title span {
     border-bottom: 0.1rem solid #fff;
     cursor: pointer;
-    border-bottom: 0.1rem solid blueviolet;
+    border-bottom: 0.1rem solid var(--blueViolet-color);
     transition: all 0.3s ease-in-out;
 }
 .popular_collection--title span:hover {
@@ -36,7 +36,7 @@
     padding: 2rem;
 }
 .popular_collection--card {
-    background-color: #343444;
+    background-color: var(--darkGray-color);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,6 +46,7 @@
     max-height: 37rem;
     
 }
+
 .popular_collection--card .card--top {
     display: flex;
     justify-content: space-around;
@@ -72,7 +73,10 @@
     padding: 0.5rem;
 }
 
-
+.popular_collection--card:first-child .card--middle img {
+    width: 11.5rem;
+    padding-right: 0.5rem;
+}
 .popular_collection--card .card--down {
     display: flex;
     justify-content: space-between;
@@ -94,7 +98,7 @@
     gap: 0.5rem;
 }
 .card_down--left .card_down--titles .card_down_names--creator {
-    color: #000;
+    color: var(--black-color);
 }
 .card_down--left .card_down--titles .card_down_names--name {
     color: #eee;

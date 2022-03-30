@@ -5,7 +5,7 @@
 .todays_picks_total {
     display: flex;
     flex-direction: column;
-    color: snow;
+    color: var(--light-color);
     padding: 3rem;
 }
 .todays_picks_total .todays_picks--firstRow {
@@ -16,7 +16,7 @@
     font-size: 2rem;
 }
 .todays_picks_total .todays_picks--firstRow span {
-    border-bottom: 0.1rem solid blueviolet;
+    border-bottom: 0.1rem solid var(--blueViolet-color);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -37,32 +37,32 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    border: 0.1rem solid blueviolet;
+    border: 0.1rem solid var(--blueViolet-color);
     border-radius: 1.8rem;
     margin: 0 1rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 .todays_picks--secondRow .secondRow_left div:hover {
-    box-shadow: 0.1rem 0.1rem 0.5rem snow;
-    color: blueviolet;
-    border-color: snow;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--light-color);
+    color: var(--blueViolet-color);
+    border-color: var(--light-color);
 }
 .todays_picks--secondRow .secondRow_right {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 0.8rem 2rem;
-    border: 0.1rem solid blueviolet;
+    border: 0.1rem solid var(--blueViolet-color);
     border-radius: 1.8rem;
     margin: 0 1rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 .todays_picks--secondRow .secondRow_right:hover {
-    box-shadow: 0.1rem 0.1rem 0.5rem snow;
-    color: blueviolet;
-    border-color: snow;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--light-color);
+    color: var(--blueViolet-color);
+    border-color: var(--light-color);
 }
 .todays_picks--thirdRow {
     display: flex;
@@ -76,7 +76,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #343444;
+    background-color: var(--darkGray-color);
     border-radius: 1.5rem;
     padding: 1rem 0.5rem;
     gap: 0.5rem;
@@ -103,13 +103,13 @@
     position: absolute;
     right: 1.5rem;
     top: 1.5rem;
-    background-color: #000;
+    background-color: var(--black-color);
     border-radius: 0.8rem;
     padding: 0.5rem;
     font-size: 1.2rem;
 }
 .thirdRow_image--title h4 {
-    color: snow;
+    color: var(--light-color);
     padding: 1rem 0;
 }
 .thirdRow_image--description {
@@ -125,7 +125,7 @@
 .thirdRow_description--left {
     display: flex;
     padding: 0.5rem;
-    color: snow;
+    color: var(--light-color);
 }
 .thirdRow_description--left img {
     width: 5rem;
@@ -171,11 +171,11 @@
 .btn_load_more button {
     padding: 1.5rem 2.5rem;
     border-radius: 2.5rem;
-    border: 0.1rem solid snow;
-    color: snow;
+    border: 0.1rem solid var(--light-color);
+    color: var(--light-color);
     outline: none;
     font-size: 1.3rem;
-    background-color: #14141f;
+    background-color: var(--dark-color);
     transition:all 0.3s ease-in-out;
 }
 .btn_load_more button:hover {

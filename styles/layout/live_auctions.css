@@ -3,21 +3,21 @@
     
 }
 .live_auctions_total {
-    background-color: #000;
+    background-color: var(--black-color);
     padding: 2.5rem 1.5rem;
 }
 .live_auctions_total .live_auctions--title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
-    color: snow;
+    color: var(--light-color);
     padding: 0 2rem;
 }
 .live_auctions--title h3 {
     font-size: 2rem;
 }
 .live_auctions--title span {
-    border-bottom: 0.1rem solid blueviolet;
+    border-bottom: 0.1rem solid var(--blueViolet-color);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -35,7 +35,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    background-color: #343444;
+    background-color: var(--darkGray-color);
     padding: 2rem;
     border-radius: 2rem;
     gap: 1rem;
@@ -55,7 +55,7 @@
     align-self: center;
     vertical-align: middle;
     text-align: center;
-    background-color: snow;
+    background-color: var(--light-color);
     font-size: 1.5rem;
     cursor: pointer;
     opacity: 0;
@@ -66,13 +66,13 @@
     
 }
 .bid:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem #000;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--black-color);
     transform: rotate(360deg);
     transform-origin: center;
 }
 .card .bid i {
    margin: 0 0.5rem;
-   color: #5142FB;
+   color: var(--primary-color);
 }
 .count_timer--total {
     
@@ -89,13 +89,13 @@
 }
 .count_timer--total i {
     padding:0 0.5rem;
-    color: #5142FB;
+    color: var(--primary-color);
 }
 .count_timer--total span {
-    color: snow;
+    color: var(--light-color);
 }
 .live_auctions--cards .card h4 {
-    color: snow;
+    color: var(--light-color);
 }
 .live_auctions--cards .card > img {
     border-radius: 1rem;
@@ -129,12 +129,12 @@
     font-size: 1.2rem;
 }
 .desc_left--names .left_names--name {
-    color: snow;
+    color: var(--light-color);
     font-size: 1.5rem;
 }
 .description--right .desc_right--bsc {
-    background-color: #5142FB;
-    color: snow;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     font-size: 1.1rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -149,7 +149,7 @@
     color: #ADADB0;
 }
 .card .current_bid .current_bid--price {
-    color: snow;
+    color: var(--light-color);
 }
 .current_bid .current_bid--left {
     display: flex;
@@ -160,7 +160,7 @@
 .current_bid .current_bid--right {
     width: 4rem;
     height: 3rem;
-    background-color: #14141f;
+    background-color: var(--dark-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,11 +170,11 @@
 } 
 .current_bid .current_bid--right i {
     font-size: 1rem;
-    color: snow;
+    color: var(--light-color);
     cursor: pointer;
 }
 
 .current_bid .current_bid--right span {
     font-size: 1rem;
-    color: snow;
+    color: var(--light-color);
 }

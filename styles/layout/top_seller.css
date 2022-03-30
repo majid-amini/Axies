@@ -8,16 +8,16 @@
     padding: 3rem;
 }
 .top_seller_total h3 {
-    color: snow;
+    color: var(--light-color);
 }
 .top_seller_total .top_seller--top {
     margin-top: 2rem;
-    color: snow;
+    color: var(--light-color);
     display: flex;
     justify-content: space-between;
 }
 .top_seller--down {
-    color: snow;
+    color: var(--light-color);
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem;

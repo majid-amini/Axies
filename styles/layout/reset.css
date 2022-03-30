@@ -4,24 +4,28 @@
 :root {
   --primary-color: #4e3fee;
   --dark-color: #14141f;
+  --black-color: #000;
   --accent-color: #d57d00;
   --light-color: snow;
   --secondary-color: #515151;
+  --blueViolet-color: blueviolet;
+  --darkGray-color: #343444;
   
 
-  --border-raduis-tiny: 0.12rem;
-  --border-raduis-xs: 0.25rem;
-  --border-raduis-sm: 0.5rem;
-  --border-raduis-md: 1rem;
-  --border-raduis-lg: 1.5rem;
-  --border-raduis-xl: 2rem;
-  --border-raduis-2xl: 2.5rem;
-  --border-raduis-3xl: 3rem;
+  --border-radius-tiny: 0.12rem;
+  --border-radius-xs: 0.25rem;
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 1.5rem;
+  --border-radius-xl: 2rem;
+  --border-radius-2xl: 2.5rem;
+  --border-radius-3xl: 3rem;
 
   --font-size-sm: 0.75rem;
   --font-size-md: 1rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
 }
 
 
@@ -35,7 +39,7 @@
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--black-color);
 }
 
 
@@ -90,9 +94,7 @@ a {
 .justify-content-space-evenly {
   justify-content: space-evenly;
 }
-.justify-content-center {
-  justify-content: center;
-}
+
 .align-items-center {
   align-items: center;
 }
@@ -102,6 +104,16 @@ a {
 .align-items-flex-end {
   align-items: flex-end;
 }
+.padding-05 {
+  padding: 0.5rem;
+}
+.padding-1 {
+  padding: 1rem;
+}
+.pt-05 {
+  padding-top: 0.5rem;
+}
+
 .pt-1 {
   padding-top: 1rem;
 }
@@ -112,7 +124,10 @@ a {
   padding-top: 3rem;
 }
 .pt-4 {
-  padding-top: 4rem;
+  padding-top: 4rius
+}
+.pb-05 {
+  padding-bottom: 0.5rem;
 }
 .pb-1 {
   padding-bottom: 1rem;
@@ -150,8 +165,48 @@ a {
 .pr-4 {
   padding-right: 4rem;
 }
-
-
+.margin-1 {
+  margin: 1rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.ml-3 {
+  margin-left: 3rem;
+}
+.ml-4 {
+  margin-left: 4rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.mr-2 {
+  margin-right: 2rem;
+}
+.mr-3 {
+  margin-right: 3rem;
+}
+.mr-4 {
+  margin-right: 4rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.cursor {
+  cursor: pointer;
+}
 
 
 

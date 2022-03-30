@@ -1,7 +1,7 @@
 header {
     top: 0;
     z-index: 10;
-    background-color: #14141f;
+    background-color: var(--dark-color);
     transition: all 0.5s ease-in-out;
   }
   .test {
@@ -10,17 +10,13 @@ header {
       text-align: center;
       top: 2rem;
       left: 2rem;
-      box-shadow: 0.1rem 0.1rem 0.5rem snow;
+      box-shadow: 0.1rem 0.1rem 0.5rem var(--light-color);
       transform: rotateX(360deg);
       border-radius: 1rem;
   }
   .nav {
-      height: 15vh;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      height: 12vh;
       width: 100%;
-      padding: 0.5rem 2rem;
       border-bottom: 0.1rem solid #343444;
   }
   
@@ -29,39 +25,55 @@ header {
   }
   .first-mega {
     width: 100%;
-    padding-top: 10rem;
     position: absolute;
-    color: wheat;
     top: 4.5rem;
     left: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: snow;
+    background-color: var(--light-color);
     visibility: 0;
     transition: all 0.5s ease-in-out;
-    padding: 1rem;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     z-index: 1;
     transform: scaleY(0);
     transform-origin: top;
   }
+  
+  .first_ul li a {
+    position: relative;
+    
+  }
+  .first_ul li a .arrow_icon {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem; 
+    border: 0.1rem solid #fff;
+    border-width: 0 0.1rem 0.1rem 0;
+    position: absolute;
+    right: -0.2rem;
+    top: 40%;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    
+  }
+  .first_ul li a:hover .arrow_icon {
+    transform: rotate(225deg);
+    transform-origin: bottom;
+    border-color: var( --blueViolet-color);
+    
+  }
+  
   .first-mega li {
-    width: 100%;
     border-bottom: 0.1rem solid #eee;
-    transition: all 0.2s ease-in-out;
+    
   }
   
   .first-mega li a {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
-  .first-mega li a:hover,
-  .first-mega li:hover {
-    color: #4e3fee;
+  .first-mega li a:hover{
+    color: var(--primary-color);
     margin-right: 0.2rem;
   }
   .first_ul > li {
@@ -69,43 +81,39 @@ header {
     transition: all 1s ease-in-out;
   }
   .first_ul li:hover > .first-mega {
-    color: #000;
+    color: var(--black-color);
     display: flex;
     visibility: 1;
     transform: scaleY(1);
   }
   .header_ul .first_ul {
-    display: flex;
-    justify-content: space-around;
-    color: snow;
+    /* display: flex;
+    justify-content: space-around; */
+    color: var(--light-color);
   }
-  .header_ul li:not(.register--li) {
-    padding: 0 1rem;
-    margin: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .header_ul .first_ul li a {
     transition: all 0.3s ease-in-out;
   }
   .header_ul .first_ul li a:hover {
     transform: scale(1.1);
     transform-origin: right;
-    color: blueviolet;
+    color: var(--blueViolet-color);
   }
   .header_ul .first_ul > li > a {
-    color: snow;
-    padding: 0 0.5rem;
+    color: var(--light-color);
+    padding: 1rem;
+    margin: 0 1rem;
     cursor: pointer;
   }
-  .header_ul ul li i {
+  
+  /* .header_ul ul li i {
     font-size: 1rem;
-  }
+  } */
   .register--li {
-    border: 0.1rem solid #4e3fee;
+    border: 0.1rem solid var(--primary-color);
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius-md);
   }
   .header_search_button {
     display: flex;
@@ -114,14 +122,14 @@ header {
     position: relative;
   }
   .header_search_button div {
-    border: 0.2rem solid #4e3fee;
+    border: 0.2rem solid var(--primary-color);
     padding: 0.5rem 2rem;
     border-radius: 2.2rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
   .header_search_button i {
-    color: snow;
+    color: var(--light-color);
   }
   .header_search_button div:hover {
     box-shadow: 0.1rem 0.1rem 0.5rem #fff;
@@ -139,7 +147,7 @@ header {
     outline: none;
     padding: 0.5rem;
     border: none;
-    color: snow;
+    color: var(--light-color);
   }
   .search_input {
     display: none;
@@ -159,7 +167,7 @@ header {
   .header_search_button .delete {
     position: absolute;
     top: 7rem;
-    color: #000;
+    color: var(--black-color);
     right: 8.5rem;
     display: none;
     cursor: pointer;
@@ -175,16 +183,16 @@ header {
     background-color: #343444;
     width: 3.7rem;
     height: 3.7rem;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     border-radius: 1rem;
     cursor: pointer;
   }
   .light_mode {
-    background: snow;
-    color: black;
+    background: var(--light-color);
+    color: var(--black-color);
   }
   .dark_mode {
     background-image: linear-gradient(to right, #14141f, #250731);
-    color: snow;
+    color: var(--light-color);
   }
   
