@@ -45,8 +45,8 @@ function scrollfunc() {
     }
 }
 
-const rightArrow = document.querySelector('.right-arrow');
-const socialSticky = document.querySelector('.social_sticky--total');
-rightArrow.addEventListener('click',function(){
-    socialSticky.style.transform.scale = '1';
-})
+// const rightArrow = document.querySelector('.right-arrow');
+// const socialSticky = document.querySelector('.social_sticky--total');
+// rightArrow.addEventListener('click',function(){
+//     socialSticky.style.transform.scale = '1';
+// })

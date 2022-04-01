@@ -87,8 +87,7 @@ header {
     transform: scaleY(1);
   }
   .header_ul .first_ul {
-    /* display: flex;
-    justify-content: space-around; */
+    
     color: var(--light-color);
   }
   
@@ -107,9 +106,7 @@ header {
     cursor: pointer;
   }
   
-  /* .header_ul ul li i {
-    font-size: 1rem;
-  } */
+ 
   .register--li {
     border: 0.1rem solid var(--primary-color);
     padding: 1rem;
@@ -183,7 +180,6 @@ header {
     background-color: #343444;
     width: 3.7rem;
     height: 3.7rem;
-    /* padding: 0.5rem; */
     border-radius: 1rem;
     cursor: pointer;
   }
