@@ -16,19 +16,7 @@ deleteBtn.addEventListener('click',function(){
 })
 
 
-// const light_btn = document.querySelector('.light');
-// light_btn.addEventListener('click',function(){
-//  document.body.classList.remove('dark_mode');
-//  document.body.classList.add('light_mode');
- 
-   
-// })
 
-// const dark_btn = document.querySelector('.dark');
-// dark_btn.addEventListener('click',function(){
-//     document.body.classList.remove('light_mode');
-//     document.body.classList.add('dark_mode'); 
-// })
 
 
 let header = document.getElementById('header');
@@ -45,8 +33,24 @@ function scrollfunc() {
     }
 }
 
-// const rightArrow = document.querySelector('.right-arrow');
-// const socialSticky = document.querySelector('.social_sticky--total');
-// rightArrow.addEventListener('click',function(){
-//     socialSticky.style.transform.scale = '1';
-// })
+
+//timer function
+let countDown = document.querySelector('#countdown');
+let countDownDate = new Date('april 12,2022 01:51:20').getTime();
+let interval = setInterval(function (){
+
+    let now = new Date().getTime();
+    
+    let distance = countDownDate - now;
+    
+
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor ((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor ((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor ((distance % (1000 * 60)) / 1000);
+    console.log(seconds);
+
+    countDown.innerHTML = `${days}d : ${hours}h: ${minutes}m: ${seconds}s`;
+},1000)
+
+
