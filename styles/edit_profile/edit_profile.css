@@ -1,0 +1,151 @@
+.header_search_button {
+    gap: 2rem;
+}
+.header_search_button div {
+    padding: 1.5rem;
+    border: none;
+    background-color: #2d2d2d;
+    border-radius: 1rem;
+}
+.header_search_button img {
+    width: 5rem;
+    border-radius: 1rem;
+}
+main {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+main .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 3rem;
+    padding: 0 5rem;
+    
+}
+.container .container_total--left {
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2d2d2d;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+.container_total--left button {
+    padding: 1rem;
+    background-color: transparent;
+    color: snow;
+    border-radius: 2rem;
+    border: 0.1rem solid snow;
+    
+}
+
+.container .container_total--right {
+    color: snow;
+}
+.container_total--left .container--img {
+    
+    text-align: center;
+    
+    
+}
+.container_total--left .container--img img {
+    width: 100%;
+    border-radius: 1rem;
+
+}
+.container_total--right .total_right--top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+   
+}
+.total_right--top div > div {
+    width: 25rem;
+    height: 8rem;
+    border: 0.1rem solid red;
+    padding: 4rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.bg--gradient1 img, .bg--gradient2 img {
+    width: 25rem;
+    height: 8rem;
+    border-radius: 1rem;
+}
+.bg--gradient1 img {
+    border: 0.2rem solid var(--blueViolet-color);
+}
+/* form {
+    display: flex;
+} */
+.container_total--right .total_right--bottom {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% auto;
+    justify-content: space-around;
+    /* gap: 2rem; */
+}
+.right_bottom--left {
+    gap: 2rem;
+}
+.container_total--right .total_right--bottom .right_bottom--left,.right_bottom--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.right_bottom--right {
+    height: 50rem;
+}
+.right_bottom--left div,.right_bottom--right div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.right_bottom--left div input,.right_bottom--right div input {
+    width: 40rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+textarea {
+    border-radius: 1rem;
+    outline: none;
+    padding: 0.5rem;
+}
+#update_btn {
+    width: 20rem;
+    padding:1rem 2rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: snow;
+}
+.right_bottom--right div {
+    gap: 1.5rem;
+}
+.right_bottom--right div button {
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--lightcolor);
+}
+.right_bottom--right div a {
+    width: 15rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--lightcolor);
+    cursor: pointer;
+}
