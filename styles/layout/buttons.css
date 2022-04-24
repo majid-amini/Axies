@@ -1,10 +1,46 @@
 
-  /* .btn {
-
+  
+ 
+  .btn__medium {
+    background: transparent;
+    outline: none;
+    padding: 1rem 2rem;
+    border: 0.1rem solid var(--light-color);
+    color: var(--light-color);
+    border-radius: 3rem;
+    transition: all 0.3s ease-in-out;
   }
   .btn__primary {
-
+    background: transparent;
+    outline: none;
+    padding: 1rem;
+    border: 0.1rem solid var(--light-color);
+    color: var(--light-color);
+    border-radius: 3rem;
+    transition: all 0.3s ease-in-out;
   }
-  .btn__primary:hover {
 
-  } */
+  .btn__blue {
+    width: 15rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--lightcolor);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn__blue:hover {
+    color: var(--primary-color);
+    background-color: var(--light-color);
+    box-shadow: 0.2rem 0.2rem 0.3rem var(--primary-color);
+    transform: translateX(0.5rem);
+  }
+
+  .btn__primary:hover, .btn__medium:hover {
+    box-shadow: 0.1rem 0.1rem 0.5rem #fff;
+    transform: translateX(0.25rem);
+    transform: scale(0.97);
+  } 

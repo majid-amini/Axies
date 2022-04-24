@@ -1,3 +1,8 @@
+body {
+    background-color: var(--dark-color);
+    background-image: none;
+}
+
 .header_search_button {
     gap: 2rem;
 }
@@ -34,14 +39,6 @@ main .container {
     border-radius: 1rem;
     gap: 1rem;
 }
-.container_total--left button {
-    padding: 1rem;
-    background-color: transparent;
-    color: snow;
-    border-radius: 2rem;
-    border: 0.1rem solid snow;
-    
-}
 
 .container .container_total--right {
     color: snow;
@@ -59,19 +56,45 @@ main .container {
 }
 .container_total--right .total_right--top {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-around;
    
+}
+.total_right--top > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
 }
 .total_right--top div > div {
     width: 25rem;
     height: 8rem;
-    border: 0.1rem solid red;
+    border: 0.1rem solid #ccc;
     padding: 4rem;
     border-radius: 1rem;
     margin-top: 1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.total_right--top div i {
+    font-size: 3.5rem;
+}
+#my-great-dropzone {
+    width: 25rem;
+    height: 15rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-color: #ccc;
+}
+#my-great-dropzone button {
+    padding: 1rem 2rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    
 }
 .bg--gradient1 img, .bg--gradient2 img {
     width: 25rem;
@@ -82,16 +105,8 @@ main .container {
 .bg--gradient1 img {
     border: 0.2rem solid var(--blueViolet-color);
 }
-/* form {
-    display: flex;
-} */
-.container_total--right .total_right--bottom {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 50% auto;
-    justify-content: space-around;
-    /* gap: 2rem; */
-}
+
+
 .right_bottom--left {
     gap: 2rem;
 }
@@ -114,21 +129,27 @@ main .container {
     width: 40rem;
     padding: 1rem;
     border-radius: 1rem;
-    border: none;
+    border: 0.1rem solid #2d2d2d;
+    background-color: transparent;
+    color: var(--lightcolor);
     outline: none;
 }
 textarea {
     border-radius: 1rem;
     outline: none;
     padding: 0.5rem;
-}
-#update_btn {
-    width: 20rem;
-    padding:1rem 2rem;
-    border-radius: 1rem;
     background-color: transparent;
-    color: snow;
+    color: var(--lightcolor);
 }
+#second_form {
+    margin-top: 2rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% auto;
+    justify-content: space-around;
+}
+
+
 .right_bottom--right div {
     gap: 1.5rem;
 }
@@ -140,13 +161,10 @@ textarea {
     background-color: var(--primary-color);
     color: var(--lightcolor);
 }
-.right_bottom--right div a {
-    width: 15rem;
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: 1rem;
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--lightcolor);
-    cursor: pointer;
+input[type="file"] {
+    display: none;
 }
+input::placeholder {
+    font-size: 1.1rem;
+}
+
