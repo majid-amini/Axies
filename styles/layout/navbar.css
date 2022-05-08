@@ -24,7 +24,7 @@ header {
     width: 10rem;
   }
   .first-mega {
-    width: 100%;
+    /* width: 100%; */
     position: absolute;
     top: 4.5rem;
     left: 1rem;
@@ -63,12 +63,13 @@ header {
   }
   
   .first-mega li {
-    border-bottom: 0.1rem solid #eee;
     
+    border-bottom: 0.1rem solid #eee;
+    padding: 0.5rem;
   }
   
   .first-mega li a {
-    /* padding: 1rem 0; */
+    width: 100%;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
