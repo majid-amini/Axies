@@ -24,13 +24,15 @@ main {
 main .container {
     width: 100%;
     display: grid;
-    grid-template-columns: 20% auto;
-    gap: 3rem;
-    padding: 0 5rem;
+    grid-template-columns: 30rem auto;
+    grid-template-rows: min-content;
+    gap: 5rem;
+    
     
 }
 .container .container_total--left {
-    height: 35rem;
+    width: 30rem;
+    height: 38rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,17 +52,18 @@ main .container {
     
 }
 .container_total--left .container--img img {
-    width: 100%;
-    border-radius: 1rem;
+    width: 24rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
 
 }
 .container_total--right .total_right--top {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-   
 }
-.total_right--top > div {
+.total_right--top .upload {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
@@ -115,7 +118,7 @@ main .container {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 2rem;
+    
 }
 .right_bottom--right {
     height: 50rem;
@@ -145,8 +148,9 @@ textarea {
     margin-top: 2rem;
     display: grid;
     width: 100%;
-    grid-template-columns: 50% auto;
-    justify-content: space-around;
+    grid-template-columns: repeat(2, 45rem);
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -167,4 +171,20 @@ input[type="file"] {
 input::placeholder {
     font-size: 1.1rem;
 }
-
+#footer_total {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.footer_first--column {
+    width: 100%;
+    grid-column: 1/3;
+}
+@media screen and (max-width: 375px){
+    footer {
+        width: 300px;
+    }
+    #footer_total {
+        display: block;
+        width: 300px;
+    }
+}
