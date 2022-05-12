@@ -1,3 +1,20 @@
+header {
+    background-color: transparent;
+}
+
+header div {
+    text-align: right;
+    position: relative;
+    top: 6rem;
+    right: 3rem;
+}
+header div i {
+    font-size: 2rem;
+    color: var(--light-color);
+    cursor: pointer;
+    color: var(--light-color);
+}
+
 .container {
     display: flex;
     height: 100vh;
