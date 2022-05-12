@@ -30,6 +30,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    gap: 1rem;
 }
 .live_auctions--cards .card {
     display: flex;
