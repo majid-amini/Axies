@@ -44,3 +44,14 @@ function scrollfunc() {
 // })
 
 
+const scroll_btn = document.querySelector('.scroll');
+
+
+
+window.addEventListener('scroll',function(){
+    if (window.scrollY > 150) {
+        scroll_btn.classList.remove("display-none");
+    } else {
+        scroll_btn.classList.add("display-none");
+    }
+})

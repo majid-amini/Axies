@@ -1,0 +1,27 @@
+.scroll {
+    /* display: none; */
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 2rem;
+    border-radius: 50%;
+    transition:all 250ms ease-in-out;
+}
+.scroll:hover {
+    background-color: var(--dark-color);
+}
+.scroll i {
+   color: var(--primary-color);
+   font-size: 2.5rem;
+   padding: 2rem;
+}
+.display-none {
+    display: none;
+}
