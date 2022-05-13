@@ -27,9 +27,9 @@ window.onscroll = function () {
 
 function scrollfunc() {
     if (window.pageYOffset > topOff) {
-        header.classList.add('test');
+        header.classList.add('sticky_menu');
     } else {
-        header.classList.remove('test')
+        header.classList.remove('sticky_menu')
     }
 }
 
