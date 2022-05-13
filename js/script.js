@@ -44,9 +44,11 @@ function scrollfunc() {
 // })
 
 
+
+
+
+//scrollBtn function
 const scroll_btn = document.querySelector('.scroll');
-
-
 
 window.addEventListener('scroll',function(){
     if (window.scrollY > 150) {
@@ -54,4 +56,12 @@ window.addEventListener('scroll',function(){
     } else {
         scroll_btn.classList.add("display-none");
     }
+})
+
+
+
+
+const lightBtn = document.querySelector(".light");
+lightBtn.addEventListener('click',function(){
+    document.body.classList.toggle("light_mode");
 })

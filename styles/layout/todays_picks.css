@@ -139,7 +139,7 @@
     gap: 0.5rem;
 }
 .thirdRow_description--left .desc_left--names .left_names--creator {
-    color: #fff;
+    color: var(--light-color);
     font-size: 1.2rem;
 }
 .description--right {
@@ -155,7 +155,7 @@
 }
 .thirdRow_currentBid--left > span,.crypto--asset2 {
     font-size: 1.2rem;
-    color: #ccc;
+    color: var(--darkGray-color);
 }
 .thirdRow_currentBid--right {
     align-self: center;
@@ -179,6 +179,6 @@
     transition:all 0.3s ease-in-out;
 }
 .btn_load_more button:hover {
-    box-shadow: 0.1rem 0.1rem 0.5rem #fff;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--light-color);
     transform: scale(0.90);
 }

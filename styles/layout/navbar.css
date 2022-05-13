@@ -17,7 +17,7 @@ header {
   .nav {
       height: 12vh;
       width: 100%;
-      border-bottom: 0.1rem solid #343444;
+      border-bottom: 0.1rem solid var(--darkGray-color);
   }
   
    .nav__logo img {
@@ -67,7 +67,7 @@ header {
     content: "";
     width: 0.6rem;
     height: 0.6rem; 
-    border: 0.1rem solid #fff;
+    border: 0.1rem solid var(--light-color);
     border-width: 0 0.1rem 0.1rem 0;
     position: absolute;
     right: -0.2rem;
@@ -98,7 +98,7 @@ header {
   }
   .first-mega li {
     width: 100%;
-    border-bottom: 0.1rem solid #eee;
+    border-bottom: 0.1rem solid var(--lightGray-color);
     padding: 0.5rem;
   }
   
@@ -131,7 +131,7 @@ header {
     color: var(--light-color);
   }
   .header_search_button div:hover {
-    box-shadow: 0.1rem 0.1rem 0.5rem #fff;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--light-color);
   }
   
   .header_search_button .glass {
@@ -179,7 +179,7 @@ header {
   }
   
   .themes img {
-    background-color: #343444;
+    background-color: var(--darkGray-color);
     width: 3.7rem;
     height: 3.7rem;
     border-radius: 1rem;
