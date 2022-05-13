@@ -23,24 +23,45 @@ header {
    .nav__logo img {
     width: 10rem;
   }
-  .first-mega {
-    /* width: 100%; */
-    position: absolute;
-    top: 4.5rem;
-    left: 1rem;
-    background-color: var(--light-color);
-    visibility: 0;
-    transition: all 0.5s ease-in-out;
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
-    z-index: 1;
-    transform: scaleY(0);
-    transform-origin: top;
+  
+  .header_ul .first_ul {
+    
+    color: var(--light-color);
   }
   
+  .header_ul .first_ul li a {
+    transition: all 0.3s ease-in-out;
+  }
+  .header_ul .first_ul li a:hover {
+    transform: scale(1.1);
+    transform-origin: right;
+    color: var(--blueViolet-color);
+  }
+  .header_ul .first_ul > li > a {
+    color: var(--light-color);
+    padding: 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+ 
+  .register--li {
+    border: 0.1rem solid var(--primary-color);
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+  }
+  
+  .first_ul > li {
+    position: relative;
+    transition: all 1s ease-in-out;
+  }
+  .first_ul li:hover > .first-mega {
+    color: var(--black-color);
+    display: flex;
+    visibility: 1;
+    transform: scaleY(1);
+  }
   .first_ul li a {
     position: relative;
-    
   }
   .first_ul li a .arrow_icon {
     content: "";
@@ -62,8 +83,21 @@ header {
     
   }
   
+  .first-mega {
+    position: absolute;
+    top: 4.5rem;
+    left: 1rem;
+    background-color: var(--light-color);
+    visibility: 0;
+    transition: all 0.5s ease-in-out;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
   .first-mega li {
-    
+    width: 100%;
     border-bottom: 0.1rem solid #eee;
     padding: 0.5rem;
   }
@@ -75,44 +109,11 @@ header {
   }
   .first-mega li a:hover{
     color: var(--primary-color);
-    margin-right: 0.2rem;
-  }
-  .first_ul > li {
-    position: relative;
-    transition: all 1s ease-in-out;
-  }
-  .first_ul li:hover > .first-mega {
-    color: var(--black-color);
-    display: flex;
-    visibility: 1;
-    transform: scaleY(1);
-  }
-  .header_ul .first_ul {
     
-    color: var(--light-color);
   }
-  
-  .header_ul .first_ul li a {
-    transition: all 0.3s ease-in-out;
-  }
-  .header_ul .first_ul li a:hover {
-    transform: scale(1.1);
-    transform-origin: right;
-    color: var(--blueViolet-color);
-  }
-  .header_ul .first_ul > li > a {
-    color: var(--light-color);
-    padding: 1rem;
-    margin: 0 1rem;
-    cursor: pointer;
-  }
-  
  
-  .register--li {
-    border: 0.1rem solid var(--primary-color);
-    padding: 1rem;
-    border-radius: var(--border-radius-md);
-  }
+
+  
   .header_search_button {
     display: flex;
     justify-content: space-around;
