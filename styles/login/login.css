@@ -58,6 +58,7 @@ main {
     
 }
 .container-right .container-right--total form {
+    width: 30rem;
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
@@ -73,12 +74,19 @@ main {
     font-size: 1.8rem;
 }
 
-.container-right .container-right--total .email_total,.password_total {
+.container-right .container-right--total .email_total,.password_total, .name_total {
     display: flex;
     flex-direction: column;
     
 }
-.email_container, .password_container {
+.name_total {
+    display: none !important;
+    
+}
+.display {
+    display: flex !important;
+}
+.email_container, .password_container, .name_container {
     width: 100%;
     display: grid;
     grid-template-columns: 1.5rem 1fr;
@@ -88,10 +96,11 @@ main {
     border-radius: 1rem;
     transition: all 0.3s ease-in-out;
 }
-.email_container:hover, .password_container:hover {
+
+.email_container:hover, .password_container:hover, .name_container:hover {
     box-shadow: 0.1rem 0.2rem 0.5rem rgb(88, 88, 158);;
 }
-.mail_icon, .password_icon {
+.mail_icon, .password_icon, .name_icon {
     color: #ccc;
     padding: 0.5rem 1rem;
 }
@@ -126,12 +135,21 @@ main {
     color: #2f3640;
 }
 .container-right .container-right--total .new_on_our_platform {
+    width: 30rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .container-right .container-right--total .new_on_our_platform a {
     color: cornflowerblue;
     cursor: pointer;
+}
+#signup {
+    transition: all 0.3s ease-in-out;
+}
+#signup:hover {
+    color: rgb(175, 194, 230);
+    transform: translateX(0.5rem);
 }
 .row{
     display: flex;
