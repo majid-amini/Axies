@@ -88,8 +88,8 @@ main {
     border-radius: 1rem;
     transition: all 0.3s ease-in-out;
 }
-.email_container:hover {
-    box-shadow: 0.1rem 0.2rem 0.5rem gray;
+.email_container:hover, .password_container:hover {
+    box-shadow: 0.1rem 0.2rem 0.5rem rgb(88, 88, 158);;
 }
 .mail_icon, .password_icon {
     color: #ccc;
@@ -104,10 +104,10 @@ main {
     border: none;
     background: transparent;    
 }
-/* .container-right .container-right--total div input:focus {
-    
+.box_shadow {
     box-shadow: 0.1rem 0.2rem 0.5rem gray;
-} */
+}
+
 .container-right .container-right--total button {
     width: 100%;
     font-size: 1.8rem;
