@@ -3,7 +3,7 @@ const signup = document.querySelector('#signup')
 let signInText = document.querySelector('#signIn_text')
 let submit = document.querySelector("#submit")
 let nameEl = document.querySelector(".name_total")
-console.log(nameEl);
+
 
 signup.addEventListener('click', changeElement)
 
@@ -14,7 +14,7 @@ function changeElement () {
         signup.textContent = "Log In"
         submit.textContent = "Register"
         nameEl.classList.add("display")
-        console.log(nameEl.classList);
+        
 
         
     } else {
