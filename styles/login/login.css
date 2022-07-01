@@ -26,7 +26,8 @@ main {
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
 }
 .container .container-left {
@@ -77,17 +78,36 @@ main {
     flex-direction: column;
     
 }
+.email_container, .password_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.email_container:hover {
+    box-shadow: 0.1rem 0.2rem 0.5rem gray;
+}
+.mail_icon, .password_icon {
+    color: #ccc;
+    padding: 0.5rem 1rem;
+}
 .container-right .container-right--total div input {
+    width: 100%;
     padding: 0.8rem;
-    /* border: none; */
     outline: none;
     border-radius: 0.5rem;
     transition: all 0.2s ease-in-out;
+    border: none;
+    background: transparent;    
 }
-.container-right .container-right--total div input:focus {
+/* .container-right .container-right--total div input:focus {
     
     box-shadow: 0.1rem 0.2rem 0.5rem gray;
-}
+} */
 .container-right .container-right--total button {
     width: 100%;
     font-size: 1.8rem;
