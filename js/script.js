@@ -1,6 +1,8 @@
 const search_btn = document.querySelector('.glass');
 let input = document.querySelector('.search_input');
 let deleteBtn = document.querySelector('.delete');
+const btnMenu = document.querySelector('#menu');
+const menuUl = document.querySelector('.first_ul');
 
 search_btn.addEventListener('click',function(){
     input.classList.toggle('search_input--show');
@@ -64,4 +66,9 @@ window.addEventListener('scroll',function(){
 const lightBtn = document.querySelector(".light");
 lightBtn.addEventListener('click',function(){
     document.body.classList.toggle("light_mode");
+})
+
+
+btnMenu.addEventListener('click', () => {
+    menuUl.classList.toggle("display");    
 })

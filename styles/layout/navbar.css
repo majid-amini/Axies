@@ -185,6 +185,17 @@ header {
     border-radius: 1rem;
     cursor: pointer;
   }
+  #menu {
+    width: 3.7rem;
+    height: 3.7rem;
+    background-color: var(--darkGray-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: var(--light-color);
+    font-size: 2.5rem;
+    display: none;
+  }
+  
   .light_mode {
     background: var(--light-color);
     color: var(--black-color);

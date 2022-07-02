@@ -11,6 +11,33 @@
     .social_sticky--total, .first_ul, .header_search_button {
       display: none;
     }
+    #menu {
+        display: block;
+        
+    }
+    .register--li {
+        border: none;
+        padding: 0;
+    }
+    .first_ul {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 8rem;
+        background-color: var(--dark-color);
+        z-index: 3;
+    }
+    .display {
+        display: block;
+    }
+    .first_ul > li {
+        display: block;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+    .first-mega {
+        top: 2rem;
+    }
     .hero_total, .live_auctions--cards, .top_seller--top, .top_seller--down, .todays_picks--thirdRow, .todays_picks--fourthRow {
         flex-direction: column !important;
         gap: 2rem;
