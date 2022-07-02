@@ -18,12 +18,32 @@
     .hero_total--left h1 {
         font-size: 4rem;
     }
+    .hero_total--right {
+        width: 100%;
+        margin-top: 4rem;
+        
+    }
+    .hero_total--right img {
+        width: 45%;
+        right: 0;
+    }
+    .hero_total--right .line {
+        width: 37rem;
+        right: -2rem;
+        top: 1rem;
+    }
+    .circle-f1 {
+        width: 6rem;
+        height: 6rem;
+    }
+    .earth {
+        bottom: -1rem;
+        left: -0.3rem;
+    }
     .extra1, .extra2 {
         margin-top: 3rem;
     }
-    .hero_total--right {
-        margin-top: 1rem;
-    }
+    
     .setup_wallet--total {
         flex-direction: column;
         gap: 2rem;
