@@ -1,0 +1,66 @@
+/* media Querry */
+@media screen and (max-width: 576px) {
+    main {
+      
+      padding: 0.5rem 2rem;
+    }
+    .nav {
+      
+      padding: 0;
+    }
+    .social_sticky--total, .first_ul, .header_search_button {
+      display: none;
+    }
+    .hero_total, .live_auctions--cards, .top_seller--top, .top_seller--down, .todays_picks--thirdRow, .todays_picks--fourthRow {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .hero_total--left h1 {
+        font-size: 4rem;
+    }
+    .extra1, .extra2 {
+        margin-top: 3rem;
+    }
+    .hero_total--right {
+        margin-top: 1rem;
+    }
+    .setup_wallet--total {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .setup_wallet--items {
+        padding: 0 0.5rem;
+    }
+    .live_auctions--total {
+        background-color: none;
+    }
+    .live_auctions--title {
+        padding: 0 !important;
+        font-size: 1.5rem;
+    }
+    /* .top_seller--top, .top_seller--down {
+        align-items: center;
+    } */
+  
+}
+@media screen and (min-width: 768px) {
+    /* .container {
+      max-width: 720px;
+    } */
+}
+@media screen and (min-width: 992px) {
+  /* .container {
+    max-width: 960px;
+  } */
+}
+@media screen and (min-width: 1200px) {
+  /* .container {
+    max-width: 1140px;
+  } */
+}
+
+@media screen and (min-width: 1400px) {
+  /* .container {
+    max-width: 1320px;
+  } */
+}
