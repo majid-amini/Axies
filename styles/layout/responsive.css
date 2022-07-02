@@ -1,0 +1,114 @@
+/* media Querry */
+@media screen and (max-width: 576px) {
+    main {
+      
+      padding: 0.5rem 2rem;
+    }
+    .nav {
+      
+      padding: 0;
+    }
+    .social_sticky--total, .first_ul, .header_search_button {
+      display: none;
+    }
+    .hero_total, .live_auctions--cards, .top_seller--top, .top_seller--down, .todays_picks--thirdRow, .todays_picks--fourthRow {
+        flex-direction: column !important;
+        gap: 2rem;
+    }
+    .hero_total--left h1 {
+        font-size: 4rem;
+    }
+    .hero_total--right {
+        width: 100%;
+        margin-top: 4rem;
+        
+    }
+    .hero_total--right img {
+        width: 45%;
+        right: 0;
+    }
+    .hero_total--right .line {
+        width: 37rem;
+        right: -2rem;
+        top: 1rem;
+    }
+    .circle-f1 {
+        width: 6rem;
+        height: 6rem;
+    }
+    .earth {
+        bottom: -1rem;
+        left: -0.3rem;
+    }
+    .extra1, .extra2 {
+        margin-top: 3rem;
+    }
+    
+    .setup_wallet--total {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .setup_wallet--items {
+        padding: 0 0.5rem;
+    }
+    .live_auctions--total {
+        background-color: none;
+    }
+    .live_auctions--cards {
+        padding: 0;
+    }
+    .live_auctions--title {
+        padding: 0 !important;
+        font-size: 1.5rem;
+    }
+    .top_seller--container {
+        width: 100% !important;
+    }
+    .popular_collection_cards_total {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .popular_collection--card {
+        width: 100%;
+       max-width: none;
+       max-height: none;
+        
+    }
+
+    .secondRow_left {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #footer_total {
+        flex-direction: column;
+    }
+    /* .top_seller--top, .top_seller--down {
+        align-items: center;
+    } */
+  
+}
+@media screen and (min-width: 768px) {
+    /* .container {
+      max-width: 720px;
+    } */
+}
+@media screen and (min-width: 992px) {
+  /* .container {
+    max-width: 960px;
+  } */
+}
+@media screen and (min-width: 1200px) {
+  /* .container {
+    max-width: 1140px;
+  } */
+}
+
+@media screen and (min-width: 1400px) {
+  /* .container {
+    max-width: 1320px;
+  } */
+}
