@@ -41,6 +41,9 @@
         padding: 0 !important;
         font-size: 1.5rem;
     }
+    .top_seller--container {
+        width: 100% !important;
+    }
     .popular_collection_cards_total {
         height: 100%;
         width: 100%;
