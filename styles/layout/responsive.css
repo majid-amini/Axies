@@ -100,11 +100,11 @@
         align-items: center;
         gap: 2rem;
     }
-    .popular_collection--card {
-        width: 100%;
-       max-width: none;
-       max-height: none;
-        
+    .grid_container {
+        display: block;
+    }
+    .image_container {
+        margin-top: 2rem;
     }
 
     .secondRow_left {
