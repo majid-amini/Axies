@@ -92,28 +92,29 @@
     .top_seller--container {
         width: 100% !important;
     }
-    #popular_collection {
+    .popular_collection_cards_total {
+        height: 100%;
         width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
-    .grid_container {
-        display: block;
-        
+    .popular_collection--card {
+        width: 100%;
+       max-width: none;
+       max-height: none;
         
     }
-    .image_container {
-        
-        margin-top: 2rem;
-    }
-    
+
     .secondRow_left {
         flex-direction: column;
         gap: 1rem;
     }
-   
     #footer_total {
         flex-direction: column;
     }
-    
+   
   
 }
 @media screen and (min-width: 768px) {
