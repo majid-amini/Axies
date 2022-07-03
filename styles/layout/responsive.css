@@ -114,7 +114,9 @@
     #footer_total {
         flex-direction: column;
     }
-   
+    .footer_first--column {
+        width: 100%;
+    }
   
 }
 @media screen and (min-width: 768px) {
